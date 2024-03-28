@@ -7,11 +7,15 @@
   </head>
 
   <body>
+    <div id="root"></div>
     <script src="routes/index/static/js/index.js"></script>
+    <script src="routes/auth.js"></script>
     <script>
       window.onload = function() {
-        init_dr = new InitDataReceiver();
-        init_dr.run();
+        // init_dr = new InitDataReceiver();
+        // init_dr.run();
+        const suio = new SignUpInOut();
+        suio.upIn();
       }
     </script>
   </body>
